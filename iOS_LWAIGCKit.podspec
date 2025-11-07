@@ -20,5 +20,9 @@ Pod::Spec.new do |spec|
   spec.dependency 'MJExtension'
   spec.dependency 'SSZipArchive'
   spec.dependency 'SocketRocket'
+
+  spec.pod_target_xcconfig      = { 
+                                    'OTHER_LDFLAGS' => '-lObjC',
+                                  }
   
 end
