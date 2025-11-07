@@ -1,6 +1,6 @@
 # iOS_LWAIGCKit
 
-#### iOS_LWAIGCKit 为 iOS 应用程序提供AI功能。 
+#### AI智能框架，负责AI智能请求交互等功能的封装。
 
 ## 兼容性（XCFramework）
 
