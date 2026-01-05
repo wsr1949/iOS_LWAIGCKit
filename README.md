@@ -9,19 +9,19 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
-## 一、安装（CocoaPods）
+## 安装（CocoaPods）
 
-##### 1. 在 `Podfile` 中添加
+##### 在 `Podfile` 中添加
 ```ruby
 pod 'iOS_LWAIGCKit', git: 'https://github.com/wsr1949/iOS_LWAIGCKit.git'
 ```
 
-##### 2. 终端执行 
+##### 终端执行 
 ```ruby
 pod install
 ```
 
-## 二、使用
+## 导入使用
 
 ##### 导入头文件
 ```ruby
@@ -29,6 +29,9 @@ pod install
 ```
 
 ##### 支持的语种 阅 `language.json` 附件，接口中语言参数均使用文件中的 `langType` 字段
+
+
+## 初始化、连接
 
 ##### 初始化（每次切换设备都需要重新调用）
 ```ruby
@@ -74,7 +77,7 @@ typedef NS_ENUM(NSInteger, LWAIGCERRORCODE) {
 ```
 
 
-## 三、语音助手（Chat）
+## 语音助手（Chat）
 
 ##### 注册智能体对话回调
 ```ruby
@@ -151,9 +154,9 @@ typedef NS_ENUM(NSInteger, LWAIGCERRORCODE) {
 ```
 
 
-## 三、对话翻译
+## 对话翻译
 
-##### 翻译结果均为流式返回，数据结构如下，其中 `action` 为 `action` 表示识别中，`recognizing` 为 `recognized` 表示句子识别完成；同一个句子 `messageId` 相同；`text` 为语音识别内容，`translation_text` 为语音翻译内容
+##### 翻译结果均为流式返回，数据结构如下，其中 `action` 为 `recognizing` 表示识别中，`action` 为 `recognized` 表示句子识别完成；同一个句子 `messageId` 相同；`text` 为语音识别内容，`translation_text` 为语音翻译内容
 ```ruby
 {
     "type": "xxx",
@@ -220,7 +223,7 @@ typedef NS_ENUM(NSInteger, LWAIGCERRORCODE) {
 ```
 
 
-## 四、同声传译
+## 同声传译
 
 ##### AI
 ```ruby
@@ -270,7 +273,7 @@ typedef NS_ENUM(NSInteger, LWAIGCERRORCODE) {
 ```
 
 
-## 五、音视频翻译（使用ZEGO即构 https://console.zego.im）
+## 音视频翻译（使用ZEGO即构 https://console.zego.im ）
 
 ##### 创建房间，获取的参数用于ZEGO登录房间
 ```ruby
@@ -342,4 +345,17 @@ typedef NS_ENUM(NSInteger, LWAIGCERRORCODE) {
   停止通话翻译语音识别
   */
 + (void)stopCallTranslationSpeechRecognition;
+```
+
+
+## 版本记录
+```ruby
+ project    2026-01-05  Version:1.0.1   Build:2026010501
+            1.增加 语音助手（Chat）
+            2.增加 对话翻译
+            3.增加 同声传译
+            4.增加 音视频翻译（使用ZEGO即构 https://console.zego.im ）
+ 
+ project    2025-03-03  Version:1.0.0   Build:2025030301
+            1.首版
 ```
