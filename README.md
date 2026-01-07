@@ -78,6 +78,8 @@ typedef NS_ENUM(NSInteger, LWAIGCERRORCODE) {
     ERRORCODE_SAME      = 500001,   // 用户同一设备重复连接服务器
     ERRORCODE_AUTH      = 500002,   // 当前设备未进行授权
     ERRORCODE_SECRETKEY = 500003,   // 服务器密钥错误（请找商务经理进行申请）
+    ERRORCODE_STOCK     = 500004,   // 当前设备未入库
+    ERRORCODE_APPID     = 500005,   // APPID错误
 } NS_SWIFT_NAME(LWAIGCERRORCODE);
 ```
 
@@ -378,6 +380,7 @@ typedef NS_ENUM(NSInteger, LWAIGCERRORCODE) {
                 音视频翻译       sendCallTranslationVoiceData:
  
             2.移除翻译相关tts状态回调，修改音频回调 新增回调参数 参@link LWAIGCAudioStream 类
+            3.新增业务错误码 500004、500005 参@link 枚举LWAIGCERRORCODE
 
  project    2026-01-05  Version:1.0.1   Build:2026010501
             1.增加 语音助手（Chat）
