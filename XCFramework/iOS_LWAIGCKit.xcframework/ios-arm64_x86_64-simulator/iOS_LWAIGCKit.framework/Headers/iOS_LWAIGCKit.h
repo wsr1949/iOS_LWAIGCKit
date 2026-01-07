@@ -29,6 +29,7 @@ FOUNDATION_EXPORT const unsigned char iOS_LWAIGCKitVersionString[];
                 音视频翻译       sendCallTranslationVoiceData:
  
             2.移除翻译相关tts状态回调，修改音频回调 新增回调参数 参@link LWAIGCAudioStream 类
+            3.新增业务错误码 500004、500005 参@link 枚举LWAIGCERRORCODE
  
  project    2026-01-05  Version:1.0.1   Build:2026010501
             1.增加 语音助手（Chat）
