@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name                     = "iOS_LWAIGCKit"
-  spec.version                  = "1.0.2"
+  spec.version                  = "1.0.4"
   spec.summary                  = "LWAIGCKit人工智能SDK for iOS"
   spec.description              = <<-DESC
                                   iOS_LWAIGCKit 为 iOS 应用程序提供AI功能。
