@@ -21,6 +21,9 @@ FOUNDATION_EXPORT const unsigned char iOS_LWAIGCKitVersionString[];
  
  版本记录：
 
+ project    2026-06-24  Version:1.0.8   Build:2026062401
+            1.优化已知问题
+ 
  project    2026-06-04  Version:1.0.7   Build:2026060401
             1.枚举 LWAIGCSERVERNODETYPE 新增 CUSTOM_DOMAIN 自定义服务器节点类型，初始化LWAIGCModel自定义类型时customServer_https、customServer_ws必填
             2.优化已知问题
